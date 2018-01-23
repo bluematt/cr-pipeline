@@ -4,7 +4,5 @@ module PipelineAction
   #
   # *payload* is passed from the `Pipeline` to the `PipelineAction`,
   # somepayload done with/to it, and should be returned.
-  #
-  # No specific parameter or return type is defined to keep it flexible.
-  abstract def invoke(payload)
+  abstract def invoke(payload : Object) : Object
 end

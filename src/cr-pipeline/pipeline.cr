@@ -11,7 +11,7 @@ class Pipeline < Array(PipelineAction)
   # *payload* is modified.
   #
   # Returns the processed *payload*.
-  def process(payload)
+  def process(payload : Object) : Object
     self.each do |c|
       payload = c.invoke(payload) if c.responds_to? :invoke
     end
@@ -20,7 +20,7 @@ class Pipeline < Array(PipelineAction)
 
   # Overloads `PipelineAction::invoke` so that a `Pipeline` is itself a
   # `PipelineAction`.
-  def invoke(payload)
+  def invoke(payload : Object) : Object
     self.process(payload)
   end
 end
