@@ -1,0 +1,9 @@
+name: pipeline
+version: 0.1.0
+
+authors:
+  - Matt Addams <bluematt@gmail.com>
+
+crystal: 0.24.1
+
+license: MIT
