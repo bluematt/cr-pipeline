@@ -1,5 +1,5 @@
 require "spec"
-require "../src/pipeline"
+require "../src/cr-pipeline"
 
 # A simple test `PipelineAction` that returns the *payload*.
 class NullPipelineAction

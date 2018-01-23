@@ -1,6 +1,6 @@
-# pipeline
+# cr-pipeline
 
-A basic pipeline.
+A basic pipeline implementation in Crystal.
 
 ## Installation
 
@@ -8,14 +8,14 @@ Add this to your application's `shard.yml`:
 
 ```yaml
 dependencies:
-  pipeline:
-    github: bluematt/pipeline
+  cr-pipeline:
+    github: bluematt/cr-pipeline
 ```
 
 ## Usage
 
 ```crystal
-require "pipeline"
+require "cr-pipeline"
 
 class Doubler
   include PipelineAction
@@ -44,7 +44,7 @@ $ crystal spec
 
 ## Contributing
 
-1. Fork it ( https://github.com/bluematt/pipeline/fork )
+1. Fork it ( https://github.com/bluematt/cr-pipeline/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -52,4 +52,4 @@ $ crystal spec
 
 ## Contributors
 
-- [bluematt](https://github.com/bluematt) Matt Addams - creator, maintainer
+- [bluematt](https://github.com/bluematt) bluematt - creator, maintainer

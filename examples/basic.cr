@@ -1,4 +1,4 @@
-require "../src/pipeline"
+require "../src/cr-pipeline"
 
 # Doubles the value of *payload*. Assumes some kind of numeric value.
 class Doubler
